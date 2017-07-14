@@ -8,10 +8,12 @@ Also works with other compatible HopeRF and Semtec LoRa devices.
 
 SSH
 ===========
+```
 sudo apt-get install network-manager nmap
 ifconfig enp2s0 | grep 'Bcast' | awk -F: '{print $3}'
 nmap -n -sP 10.42.0.255/24
 ssh -Y pi@10.42.0.107
+```
 
 Connections
 ===========
