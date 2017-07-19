@@ -15,6 +15,15 @@ nmap -n -sP 10.42.0.255/24
 ssh -Y pi@10.42.0.107
 ```
 
+Update software
+===========
+```
+cd ..
+git pull origin master
+./build
+sudo reboot
+```
+
 Connections
 ===========
 
